@@ -2,15 +2,7 @@ import TarskiGeometry.lemmas
 
 namespace Tarski
 
-open FirstOrder
-
-open Language
-
-open Structure
-
-open Term
-
-open BoundedFormula
+open FirstOrder Language Structure Term BoundedFormula
 
 inductive TarskiRel : ℕ → Type
   | between : TarskiRel 3
@@ -18,17 +10,15 @@ inductive TarskiRel : ℕ → Type
 
 def tarski : Language := ⟨fun _ => Empty, TarskiRel⟩
 
-@[simp]
-def PB {n} {α} (t₁ t₂ t₃: tarski.Term (Sum α (Fin n))) : tarski.BoundedFormula α n := Relations.boundedFormula₃ TarskiRel.between t₁ t₂ t₃
+abbrev PB {n} {α} (t₁ t₂ t₃: tarski.Term (Sum α (Fin n))) : tarski.BoundedFormula α n := Relations.boundedFormula₃ TarskiRel.between t₁ t₂ t₃
 
-@[simp]
-def LC {n} {α} (t₁ t₂ t₃ t₄ : tarski.Term (Sum α (Fin n))) : tarski.BoundedFormula α n := Relations.boundedFormula₄ TarskiRel.congr t₁ t₂ t₃ t₄
+abbrev LC {n} {α} (t₁ t₂ t₃ t₄ : tarski.Term (Sum α (Fin n))) : tarski.BoundedFormula α n := Relations.boundedFormula₄ TarskiRel.congr t₁ t₂ t₃ t₄
 
 def reflexivityOfCongruence : tarski.Sentence := ∀' ∀'(LC &0 &1 &1 &0)
 
 def identityOfCongruence : tarski.Sentence := ∀' ∀' ∀'(LC &0 &1 &2 &2 ⟹ &0 =' &1)
 
-def transitivityOfCongruence : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' ∀'(LC &0 &1 &2 &3 ⊓ LC &0 &1 &4 &5 ⟹ LC &2 &3 &4 &5)
+def transitivityOfCongruence : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' ∀'(LC &0 &1 &2 &3 ⟹ LC &2 &3 &4 &5 ⟹ LC &0 &1 &4 &5)
 
 def identityOfBetweenness : tarski.Sentence := ∀' ∀' (PB &0 &1 &0 ⟹ &0 =' &1)
 
