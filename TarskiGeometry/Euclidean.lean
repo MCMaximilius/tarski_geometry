@@ -94,8 +94,8 @@ lemma eucildeanPlane.segment_construction : eucildeanPlane ⊨ segmentConstructi
     use (b - a + x)
     constructor
     . use 1
-      simp only [zero_le_one, le_refl, and_self, one_smul, sub_self, smul_add, zero_smul, add_zero]
-    . simp only [SeminormedAddCommGroup.dist_eq, sub_add_cancel_right, neg_sub]
+      simp_arith
+    . simp only [SeminormedAddCommGroup.dist_eq, sub_add_cancel_right,  neg_sub]
   . use (dist b a / dist y x) • (y - x) + y
     constructor
     . use dist y x / (dist y x + dist b a)
@@ -106,9 +106,8 @@ lemma eucildeanPlane.segment_construction : eucildeanPlane ⊨ segmentConstructi
         . rw [div_le_one]
           simp only [le_add_iff_nonneg_right, dist_nonneg]
           rw [add_comm]
-          apply add_pos_of_nonneg_of_pos
-          . apply dist_nonneg
-          . apply dist_pos.2 h
-      . simp only [smul_add]
+          apply add_pos_of_nonneg_of_pos dist_nonneg (dist_pos.2 h)
+      .
+      -- simp only [smul_sub, smul_add, smul_smul, smul_neg, sub_eq_add_neg, neg_add, ← neg_smul, smul_eq_mul]
         sorry
     . sorry
