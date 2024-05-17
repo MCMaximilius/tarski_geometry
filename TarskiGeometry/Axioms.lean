@@ -22,7 +22,7 @@ def transitivityOfCongruence : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' ∀'(
 
 def identityOfBetweenness : tarski.Sentence := ∀' ∀' (PB &0 &1 &0 ⟹ &0 =' &1)
 
-def axiomOfPasch : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' ∃' (PB &0 &3 &2 ⊓ PB &1 &4 &2 ⟹ PB &3 &5 &1 ⊓ PB &4 &5 &0)
+def axiomOfPasch : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' (PB &0 &3 &2 ⊓ PB &1 &4 &2 ⟹ ∃' (PB &3 &5 &1 ⊓ PB &4 &5 &0))
 
 def axiomOfContinuity {n : ℕ} (φ ψ: BoundedFormula tarski Empty (n + 2)) : tarski.Sentence :=
 alls (∃' ∀' ∀' ((liftAt 1 2 φ) ⊓ (liftAt 1 2 ψ) ⟹ PB &2 &0 &1)
@@ -32,7 +32,7 @@ def lowerDimension : tarski.Sentence := ∃' ∃' ∃'(∼(PB &0 &1 &2) ⊓ ∼(
 
 def upperDimension : tarski.Sentence := ∀' ∀' ∀' ∀' ∀'(LC &0 &3 &0 &4 ⊓ LC &1 &3 &1 &4 ⊓ LC &2 &3 &2 &4 ⊓ ∼(&3 =' &4) ⟹ PB &0 &1 &2 ⊔ PB &1 &2 &0 ⊔ PB &2 &0 &1)
 
-def axiomOfEuclid : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' ∃' ∃' (PB &0 &3 &4 ⊓ PB &1 &3 &2 ⊓ ∼(&0 =' &3) ⟹ PB &0 &1 &5 ⊓ PB &0 &2 &6 ⊓ PB &5 &4 &6)
+def axiomOfEuclid : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' (PB &0 &3 &4 ⊓ PB &1 &3 &2 ⊓ ∼(&0 =' &3) ⟹  ∃' ∃' (PB &0 &1 &5 ⊓ PB &0 &2 &6 ⊓ PB &5 &4 &6))
 
 def fiveSegment : tarski.Sentence := ∀' ∀' ∀' ∀' ∀' ∀' ∀' ∀'(∼(&0 =' &1) ⊓ PB &0 &1 &2 ⊓ PB &3 &4 &5 ⊓ LC &0 &1 &3 &4 ⊓ LC &1 &2 &4 &5 ⊓ LC &0 &6 &3 &7 ⊓ LC &1 &6 &4 &7 ⟹ LC &2 &6 &5 &7)
 

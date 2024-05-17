@@ -1,5 +1,4 @@
 import Mathlib.ModelTheory.Semantics
-import Mathlib.Data.Real.Basic
 
 namespace FirstOrder
 
@@ -102,41 +101,16 @@ universe u
 variable {α : Type u}
 
 @[simp]
-theorem cons_elim0 (x : α) : Fin.cons x Fin.elim0 = ![x] := by
+lemma cons_elim0 (x : α) : Fin.cons x Fin.elim0 = ![x] := by
   funext y
   match y with
   | 0 => rfl
 
--- @[simp]
--- theorem cons_elim0' (x : α) : Fin.cons x Fin.elim0' = ![x] := by
---   funext y
---   match y with
---   | 0 => rfl
+lemma nonzero_numeral_eq_succ (n : ℕ) : (1 : Fin (n + 2)) = Fin.succ 0 ∧ (2 : Fin (n + 3)) = Fin.succ 1 ∧ (3 : Fin (n + 4)) = Fin.succ 2 ∧ (4 : Fin (n + 5)) = Fin.succ 3 ∧ (5 : Fin (n + 6)) = Fin.succ 4 ∧ (6 : Fin (n + 7)) = Fin.succ 5 ∧ (7 : Fin (n + 8)) = Fin.succ 6 ∧ (8 : Fin (n + 9)) = Fin.succ 7 := ⟨rfl, rfl, rfl, rfl, rfl, rfl, rfl, rfl⟩
 
--- theorem nonzero_eq_succ (n : ℕ) (m : Fin (Nat.iterate Nat.succ (m + 1) n)) : Nat.succ m = Fin.succ m := by
---   simp only [Function.iterate_succ, Function.comp_apply, val_succ]
-
--- lemma nat_succ_pos (m n : ℕ) : (Nat.iterate Nat.succ (1 + m) n) > 0 := by
---   simp only [Function.iterate_add, Function.iterate_one, Function.comp_apply, Nat.succ_pos]
-
--- theorem nonzero_eq_succ (m n : ℕ) : Fin.ofNat' m (nat_succ_pos m n) = Fin.succ m:= by
+-- theorem nonzero_eq_succ (m n : ℕ) : (Fin.ofNat (m + 1) : Fin (n + m + 1)) = Fin.succ (@Fin.ofNat (n + m) m) := by
+--   simp only [Nat.succ_eq_add_one, val_succ, Nat.cast_add, cast_val_eq_self, Nat.cast_one]
 --   sorry
-
-theorem one (n : ℕ) : (1 : Fin (Nat.succ (Nat.succ n))) = Fin.succ 0 := rfl
-
-theorem two (n : ℕ) : (2 : Fin (Nat.succ (Nat.succ (Nat.succ n)))) = Fin.succ 1 := rfl
-
-theorem three (n : ℕ) : (3 : Fin (Nat.succ (Nat.succ (Nat.succ (Nat.succ n))))) = Fin.succ 2 := rfl
-
-theorem four (n : ℕ) : (4 : Fin (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ n)))))) = Fin.succ 3 := rfl
-
-theorem five (n : ℕ) : (5 : Fin (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ n))))))) = Fin.succ 4 := rfl
-
-theorem six (n : ℕ) : (6 : Fin (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ n)))))))) = Fin.succ 5 := rfl
-
-theorem seven (n : ℕ) : (7 : Fin (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ n))))))))) = Fin.succ 6 := rfl
-
-theorem eight (n : ℕ) : (8 : Fin (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ (Nat.succ n)))))))))) = Fin.succ 7 := rfl
 
 end Fin
 

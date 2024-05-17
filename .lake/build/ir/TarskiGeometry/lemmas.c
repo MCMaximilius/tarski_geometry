@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: TarskiGeometry.Lemmas
-// Imports: Init Mathlib.ModelTheory.Semantics Mathlib.Data.Real.Basic
+// Imports: Init Mathlib.ModelTheory.Semantics
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -249,7 +249,6 @@ return x_18;
 }
 lean_object* initialize_Init(uint8_t builtin, lean_object*);
 lean_object* initialize_Mathlib_ModelTheory_Semantics(uint8_t builtin, lean_object*);
-lean_object* initialize_Mathlib_Data_Real_Basic(uint8_t builtin, lean_object*);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_TarskiGeometry_Lemmas(uint8_t builtin, lean_object* w) {
 lean_object * res;
@@ -259,9 +258,6 @@ res = initialize_Init(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Mathlib_ModelTheory_Semantics(builtin, lean_io_mk_world());
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
-res = initialize_Mathlib_Data_Real_Basic(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 l_FirstOrder_Language_Relations_boundedFormula_u2083___closed__1 = _init_l_FirstOrder_Language_Relations_boundedFormula_u2083___closed__1();

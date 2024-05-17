@@ -728,7 +728,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; uint8_t x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(6u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = 0;
 x_4 = l_Tarski_reflexivityOfCongruence___closed__2;
 x_5 = l_Tarski_transitivityOfCongruence___closed__2;
@@ -743,7 +743,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; uint8_t x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(6u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = 0;
 x_4 = l_Tarski_reflexivityOfCongruence___closed__4;
 x_5 = l_Tarski_transitivityOfCongruence___closed__5;
@@ -758,7 +758,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(6u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfPasch___closed__2;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -768,7 +768,7 @@ static lean_object* _init_l_Tarski_axiomOfPasch___closed__4() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = lean_unsigned_to_nat(6u);
+x_1 = lean_unsigned_to_nat(5u);
 x_2 = l_Tarski_axiomOfPasch___closed__1;
 x_3 = l_Tarski_axiomOfPasch___closed__3;
 x_4 = lean_alloc_ctor(3, 3, 0);
@@ -783,7 +783,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(6u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfPasch___closed__4;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -859,13 +859,10 @@ static lean_object* _init_l_Tarski_axiomOfPasch___closed__11() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = lean_unsigned_to_nat(6u);
-x_2 = l_Tarski_axiomOfPasch___closed__5;
+x_1 = l_Tarski_tarski;
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfPasch___closed__10;
-x_4 = lean_alloc_ctor(3, 3, 0);
-lean_ctor_set(x_4, 0, x_1);
-lean_ctor_set(x_4, 1, x_2);
-lean_ctor_set(x_4, 2, x_3);
+x_4 = l_FirstOrder_Language_BoundedFormula_ex(x_1, lean_box(0), x_2, x_3);
 return x_4;
 }
 }
@@ -873,10 +870,13 @@ static lean_object* _init_l_Tarski_axiomOfPasch___closed__12() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(5u);
+x_1 = lean_unsigned_to_nat(5u);
+x_2 = l_Tarski_axiomOfPasch___closed__5;
 x_3 = l_Tarski_axiomOfPasch___closed__11;
-x_4 = l_FirstOrder_Language_BoundedFormula_ex(x_1, lean_box(0), x_2, x_3);
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
 return x_4;
 }
 }
@@ -1585,7 +1585,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; uint8_t x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = 0;
 x_4 = l_Tarski_reflexivityOfCongruence___closed__2;
 x_5 = l_Tarski_transitivityOfCongruence___closed__2;
@@ -1600,7 +1600,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; uint8_t x_3; lean_object* x_4; lean_object* x_5; lean_object* x_6; lean_object* x_7; lean_object* x_8; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = 0;
 x_4 = l_Tarski_reflexivityOfCongruence___closed__4;
 x_5 = l_Tarski_transitivityOfCongruence___closed__2;
@@ -1615,7 +1615,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfEuclid___closed__2;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -1625,7 +1625,7 @@ static lean_object* _init_l_Tarski_axiomOfEuclid___closed__4() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = lean_unsigned_to_nat(7u);
+x_1 = lean_unsigned_to_nat(5u);
 x_2 = l_Tarski_axiomOfEuclid___closed__1;
 x_3 = l_Tarski_axiomOfEuclid___closed__3;
 x_4 = lean_alloc_ctor(3, 3, 0);
@@ -1640,7 +1640,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfEuclid___closed__4;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -1650,7 +1650,7 @@ static lean_object* _init_l_Tarski_axiomOfEuclid___closed__6() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = lean_unsigned_to_nat(7u);
+x_1 = lean_unsigned_to_nat(5u);
 x_2 = l_Tarski_reflexivityOfCongruence___closed__2;
 x_3 = l_Tarski_transitivityOfCongruence___closed__2;
 x_4 = lean_alloc_ctor(1, 3, 0);
@@ -1665,7 +1665,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfEuclid___closed__6;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -1676,7 +1676,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfEuclid___closed__7;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -1686,7 +1686,7 @@ static lean_object* _init_l_Tarski_axiomOfEuclid___closed__9() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = lean_unsigned_to_nat(7u);
+x_1 = lean_unsigned_to_nat(5u);
 x_2 = l_Tarski_axiomOfEuclid___closed__5;
 x_3 = l_Tarski_axiomOfEuclid___closed__8;
 x_4 = lean_alloc_ctor(3, 3, 0);
@@ -1701,7 +1701,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(7u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfEuclid___closed__9;
 x_4 = l_FirstOrder_Language_BoundedFormula_not(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -1848,13 +1848,10 @@ static lean_object* _init_l_Tarski_axiomOfEuclid___closed__22() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = lean_unsigned_to_nat(7u);
-x_2 = l_Tarski_axiomOfEuclid___closed__10;
+x_1 = l_Tarski_tarski;
+x_2 = lean_unsigned_to_nat(6u);
 x_3 = l_Tarski_axiomOfEuclid___closed__21;
-x_4 = lean_alloc_ctor(3, 3, 0);
-lean_ctor_set(x_4, 0, x_1);
-lean_ctor_set(x_4, 1, x_2);
-lean_ctor_set(x_4, 2, x_3);
+x_4 = l_FirstOrder_Language_BoundedFormula_ex(x_1, lean_box(0), x_2, x_3);
 return x_4;
 }
 }
@@ -1863,7 +1860,7 @@ _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
 x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(6u);
+x_2 = lean_unsigned_to_nat(5u);
 x_3 = l_Tarski_axiomOfEuclid___closed__22;
 x_4 = l_FirstOrder_Language_BoundedFormula_ex(x_1, lean_box(0), x_2, x_3);
 return x_4;
@@ -1873,10 +1870,13 @@ static lean_object* _init_l_Tarski_axiomOfEuclid___closed__24() {
 _start:
 {
 lean_object* x_1; lean_object* x_2; lean_object* x_3; lean_object* x_4; 
-x_1 = l_Tarski_tarski;
-x_2 = lean_unsigned_to_nat(5u);
+x_1 = lean_unsigned_to_nat(5u);
+x_2 = l_Tarski_axiomOfEuclid___closed__10;
 x_3 = l_Tarski_axiomOfEuclid___closed__23;
-x_4 = l_FirstOrder_Language_BoundedFormula_ex(x_1, lean_box(0), x_2, x_3);
+x_4 = lean_alloc_ctor(3, 3, 0);
+lean_ctor_set(x_4, 0, x_1);
+lean_ctor_set(x_4, 1, x_2);
+lean_ctor_set(x_4, 2, x_3);
 return x_4;
 }
 }
